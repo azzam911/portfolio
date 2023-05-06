@@ -7,7 +7,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+        <li class="nav-item items">
           <router-link to="/">Home</router-link> |
           <router-link to="/about">About</router-link> |
           <router-link to="/projects">projects</router-link>
@@ -90,5 +90,21 @@ nav a.router-link-exact-active {
 }
 .navbar-collapse {
   transition: .5s !important;
+}
+
+@media screen and (min-width: 800px) {
+  .items {
+    margin-left: 650px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .items {
+    margin-left: 700px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .items {
+    margin-left: 800px;
+  }
 }
 </style>

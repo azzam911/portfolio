@@ -108,6 +108,7 @@ export default {
 .container {
     display: flex;
     flex-wrap: wrap;
+    margin: 100px auto;
 }
 .card-body {
     display: flex;
