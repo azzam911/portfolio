@@ -1,11 +1,13 @@
 <template>
-  <nav  class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <router-link  to="/" class="may-name">Azzam Alkhaldi</router-link>
+    <router-link  to="/" class="navbar-brand" >Azzam Alkhaldi</router-link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      </ul>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item items">
           <router-link to="/">Home</router-link> |
@@ -17,7 +19,6 @@
     </div>
   </div>
 </nav>
-
   <router-view/>
 </template>
 <script>
@@ -41,10 +42,6 @@
   color: #2c3e50;
   text-align: center;
   text-decoration: none !important;
-}
-.may-name {
-    font-size: 25px;
-    font-weight: 700;
 }
 nav {
     display: flex;
@@ -92,19 +89,16 @@ nav a.router-link-exact-active {
   transition: .5s !important;
 }
 
-@media screen and (min-width: 800px) {
-  .items {
-    margin-left: 650px;
+@media screen and (min-width: 992px) {
+    .items {
+    margin-left: 500px;
   }
 }
-@media screen and (min-width: 1100px) {
-  .items {
+@media screen and (min-width: 1066px) {
+    .items {
     margin-left: 700px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .items {
-    margin-left: 800px;
-  }
-}
+
+
 </style>

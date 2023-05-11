@@ -58,7 +58,9 @@ export default {
 .contact-us ul {
   display: flex;
   gap: 40px;
+  padding: 0 !important;
 }
+
 .contact-us ul li {
   background-color: #42b983;
   padding: 10px 20px;

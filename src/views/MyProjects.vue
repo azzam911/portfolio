@@ -49,28 +49,6 @@ export default {
     color: #000;
     font-weight: 700;
 }
-.repos {
-    margin: 100px auto;
-}
-.repos ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-.repos ul li {
-    width: 200px;
-    background-color: #eee;
-    padding: 20px;
-    border-radius: 10px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
 .real-website {
     display: block;
 }
@@ -81,20 +59,8 @@ export default {
     gap: 20px;
     align-items: center;
 }
-.repos ul li a {
-    color: #fff;
-    background-color: #42b983;
-    width: fit-content;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: .5s;
-    text-decoration: none;
-    
-}
-.repos ul li a:hover {
-    transform: scale(1.1);
-    color: #fff !important;
-}
+
+
 
 .project-name {
     font-size: 17px;
@@ -105,6 +71,7 @@ export default {
         width: 180px;
     }
 }
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -119,5 +86,11 @@ export default {
 .card {
     height: 200px !important;
     margin: 10px auto;
+}
+
+@media screen and (max-width: 400px) {
+    .card-body {
+    width: 150px;
+}
 }
 </style>
